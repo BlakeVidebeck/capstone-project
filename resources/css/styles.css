@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.header{
+    border: 1px solid red;
+    height: 64px;
+    padding: 0px 24px;
+}
+
+.banner{
+    background-color: lightgray;
+    border: 1px solid blue;
+    height: 660px;
+}
+
+.banner img{
+    float: left;
+    padding: 32px 24px;
+    width: 60%;
+}
+
+.banner h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.banner-2{
+    border: 1px solid green;
+    height: 650px;
+    width: 60%;
+   float: left;
+}
+
+.banner-3{
+    border: 1px solid black;
+    height: 650px;
+    width: 40%;
+   float: right;
+}
+
+.learning{
+    border: 1px solid hotpink;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    padding:32px 72px;
+}
+
+.thesis{
+    border: 2px solid red;
+    height: 650px;
+}
+
+.footer{
+    border: 2px solid blue;
+    height: 100px;
+}
