@@ -101,19 +101,75 @@ padding: 0px 8px;
 
 /*end of banner-1 styles*/
 
+/* banner 2 styles*/
 .banner-2{
-    border: 1px solid green;
-    height: 650px;
+   /* border: 1px solid green;*/
+    height: 730px;
     width: 60%;
    float: left;
+   padding: 32px 24px;
 }
 
+.banner-2 img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 32px;
+}
+
+.banner-2 h2{
+    padding-bottom: 24px;
+    font-size: 46px;
+}
+
+.banner-2 .quote{
+    padding-bottom: 24px;
+    font-size: 18px;
+}
+/* end of banner 2 styles*/
+
+/*banner 3 styles*/
 .banner-3{
-    border: 1px solid black;
-    height: 650px;
+    border-left: 1px solid lightgray;
+    height: 730px;
     width: 40%;
    float: right;
+   display: block;
 }
+
+.banner-3 .content{
+border: 1px solid lightgray;
+width: 100%;
+height: 33.3%;
+padding: 16px;
+display: flex;
+}
+
+.banner-3 img{
+    height: auto;
+    width: 35%;
+    padding-right: 16px;
+}
+
+.banner-3 h3{
+    font-size: 24px;
+}
+.banner-3 p{
+    padding: 8px 0px;
+}
+.banner-3 .dates{
+   /* border: 1px solid gray;*/
+    width: 65%;
+    height: auto;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.banner-3 a{
+    text-decoration: none;
+    color:  blue;
+}
+/*end of banner 3 styles*/
 
 /*learning styles*/
 .learning{
@@ -127,6 +183,7 @@ padding: 0px 8px;
 
 .learning h2{
 padding-top: 32px;
+font-size: 34px;
 }
 
 .learning .course-container{
