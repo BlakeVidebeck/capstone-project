@@ -56,7 +56,7 @@ padding: 0px 8px;
 
 .banner{
     background-color: lightgray;
-    border: 1px solid blue;
+   /* border: 1px solid blue; */
     height: 660px;
     display: flex;
     align-items: center;
@@ -71,16 +71,28 @@ padding: 0px 8px;
 .banner .join{
     height: 100%;
     width:100%;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     align-items: center;
+    justify-content: left;
     text-align: left;
+    font-size: 23px;
 }
 
+.banner .start{
+    /*border: 1px solid green;*/
+    height: 350px;
+    width: 400px;
+    display: block;
+    margin-left: 12px;
+}
+
+
 .banner .button{
-    height: 40px;
-    width: 250px;
-    background-color: darkgray;
+    height: 55px;
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
