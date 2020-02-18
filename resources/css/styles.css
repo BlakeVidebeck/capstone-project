@@ -57,7 +57,7 @@ padding: 0px 8px;
 .banner{
     background-color: lightgray;
    /* border: 1px solid blue; */
-    height: 660px;
+    height: auto;
     display: flex;
     align-items: center;
 }
@@ -103,8 +103,9 @@ padding: 0px 8px;
 
 /* banner 2 styles*/
 .banner-2{
-   /* border: 1px solid green;*/
-    height: 730px;
+  /* border: 1px solid green;*/
+    border-right: 1px solid lightgray;
+    height: auto;
     width: 60%;
    float: left;
    padding: 32px 24px;
@@ -129,8 +130,7 @@ padding: 0px 8px;
 
 /*banner 3 styles*/
 .banner-3{
-    border-left: 1px solid lightgray;
-    height: 730px;
+    height: auto;
     width: 40%;
    float: right;
    display: block;
@@ -178,7 +178,7 @@ display: flex;
     display: inline-block;
     text-align: center;
     width: 100%;
-    height: 910px;
+    height: auto;
 }
 
 .learning h2{
@@ -215,11 +215,90 @@ font-size: 34px;
 /*end of learning styles*/
 
 .thesis{
-    border: 2px solid red;
-    height: 650px;
+    /*border: 2px solid red;*/
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+    
+.thesis h2{
+    padding: 32px;
+    font-size: 34px;
+    }
+
+.thesis-1{
+    /*border: 1px solid green;*/
+     width: 60%;
+     height: auto;
+    padding: 0px 24px 32px 24px;
+    text-align: left;
+    float: left;
+ }
+
+ .thesis-1 video{
+     width: 100%;
+     height: auto;
+     padding-bottom: 24px;
+ }
+
+ .thesis h3{
+     padding-bottom: 8px;
+     font-size: 26px;
+ }
+
+ .thesis-2{
+    /*border: 1px solid blue;*/
+    width: 40%;
+    height: auto;
+   float: right;
+   padding-right: 24px;
+   text-align: left;
+ }
+
+
+.thesis-container{
+    /*border: 1px solid lightgray;*/
+    width: 100%;
+    height: 33.3%;
+    display: block;
+}
+
+.thesis-content{
+    display: flex;
+}
+.thesis img{
+    padding: 16px;
+    width: 35%;
+    height: auto;
+}
+
+.thesis .info{
+    width: 65%;
+    height: auto;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
 }
 
 .footer{
-    border: 2px solid blue;
-    height: 100px;
+    /*border: 2px solid red;*/
+    border-top: 1px solid lightgray;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px 24px;
+}
+
+.footer .copyright{
+    width: 100%;
+}
+.footer .terms{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.terms p{
+    margin-left: 8px;
 }
