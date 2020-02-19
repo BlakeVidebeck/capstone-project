@@ -58,6 +58,7 @@
     display: none;
 }
 
+/*banner-3 mobile styles*/
 .banner-3{
     width: 100%;
 }
@@ -85,7 +86,6 @@
 }
 
 /*learning mobile styles*/
-
 .learning{
     background-color: white;
     border-bottom: 1px solid lightgray;
@@ -113,6 +113,12 @@
     display: flex;
     font-size: 20px;
 }
+
+.learning-mobile a{
+    text-decoration: none;
+    color: black;
+}
+
 .learning-desktop{
     display: none;
 }
@@ -131,6 +137,7 @@
     display: none;
 }
 
+/*footer mobile styles*/
 .footer .copyright{
     height: auto;
     padding: 16px 0;

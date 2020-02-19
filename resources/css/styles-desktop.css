@@ -8,10 +8,9 @@
   html{
       width: 100%;
   }
+
 /*header styles*/
 .header .desktop{
-    /*border: 1px solid red;*/
-    width: 100%;
     height: 64px;
     padding: 0px 24px;
     display: flex; 
@@ -24,8 +23,8 @@
 
 .header .logo{
     display: flex;
-    align-items: center; 
-   height: 32px;
+    align-items: center;
+    height: 32px;
 }
 
 .header .gray{
@@ -36,7 +35,6 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-/*border: 2px solid gold*/   /*helped a lot*/
 }
 
 .header ul{
@@ -55,45 +53,30 @@ padding: 0px 8px;
     color: black;
 }
 
-/*end of header styles*/
-
+/*banner-1 desktop styles*/
 .banner{
     background-color: lightgray;
-   /* border: 1px solid blue; */
     height: auto;
     display: flex;
     align-items: center;
 }
 
 .banner img{
-    display: flex;
-    justify-content: flex-start;
     padding: 32px 24px;
     width: 60%;
 }
-.banner .join{
-    height: 100%;
-    width:100%;
-    /*border: 1px solid red;*/
-    display: flex;
-    align-items: center;
-    justify-content: left;
+
+.banner .start{
+    height: auto;
+    width: 100%;
+    margin-left: 12px;
     text-align: left;
     font-size: 23px;
 }
 
-.banner .start{
-    /*border: 1px solid green;*/
-    height: 350px;
-    width: 400px;
-    display: block;
-    margin-left: 12px;
-}
-
-
 .banner .button{
-    height: 55px;
-    width: 100%;
+    height: auto;
+    width: auto;
     background-color: rgb(58, 58, 58);
     display: flex;
     justify-content: center;
@@ -105,11 +88,8 @@ padding: 0px 8px;
     color: white;
 }
 
-/*end of banner-1 styles*/
-
 /* banner 2 styles*/
 .banner-2{
-  /* border: 1px solid green;*/
     border-right: 1px solid lightgray;
     height: auto;
     width: 60%;
@@ -124,15 +104,13 @@ padding: 0px 8px;
 }
 
 .banner-2 h2{
-    padding-bottom: 24px;
     font-size: 46px;
 }
 
 .banner-2 .quote{
-    padding-bottom: 24px;
+    padding: 24px 0px;
     font-size: 18px;
 }
-/* end of banner 2 styles*/
 
 /*banner 3 styles*/
 .banner-3{
@@ -167,11 +145,12 @@ display: flex;
 .banner-3 h3{
     font-size: 24px;
 }
+
 .banner-3 p{
     padding: 8px 0px;
 }
+
 .banner-3 .dates{
-   /* border: 1px solid gray;*/
     width: 65%;
     height: auto;
    display: flex;
@@ -183,11 +162,9 @@ display: flex;
     text-decoration: none;
     color:  blue;
 }
-/*end of banner 3 styles*/
 
-/*learning styles*/
+/*learning desktop styles*/
 .learning{
-    /*border: 1px solid hotpink;*/ 
     background-color: lightgray;
     display: inline-block;
     text-align: center;
@@ -210,13 +187,13 @@ font-size: 34px;
 }
 
 .learning-desktop .course{
-    /*border: 1px solid green;*/
     height: auto;
     width: auto;
     max-width: 30%;
     background-color: white;
     margin: 16px;
 }
+
 .learning img{
     height: auto;
     width: 100%;
@@ -228,10 +205,8 @@ font-size: 34px;
     text-align: left;
     line-height: 18px;
 }
-/*end of learning styles*/
 
 .thesis{
-    /*border: 2px solid red;*/
     height: auto;
     width: 100%;
     text-align: center;
@@ -243,7 +218,6 @@ font-size: 34px;
     }
 
 .thesis-1{
-    /*border: 1px solid green;*/
      width: 60%;
      height: auto;
     padding: 0px 24px 32px 24px;
@@ -263,7 +237,6 @@ font-size: 34px;
  }
 
  .thesis-2{
-    /*border: 1px solid blue;*/
     width: 40%;
     height: auto;
    float: right;
@@ -271,9 +244,7 @@ font-size: 34px;
    text-align: left;
  }
 
-
 .thesis-container{
-    /*border: 1px solid lightgray;*/
     width: 100%;
     height: 33.3%;
     display: block;
@@ -297,7 +268,6 @@ font-size: 34px;
 }
 
 .footer{
-    /*border: 2px solid red;*/
     border-top: 1px solid lightgray;
     height: auto;
     display: inline-flex;
@@ -309,6 +279,7 @@ font-size: 34px;
 .footer .copyright{
     width: 100%;
 }
+
 .footer .terms{
     width: 100%;
     display: flex;
@@ -319,7 +290,7 @@ font-size: 34px;
     margin-left: 8px;
 }
 
-
+/*desktop media styles*/
 @media only screen and (min-width: 401px) {
     .header .mobile{
         display: none;
