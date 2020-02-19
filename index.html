@@ -5,12 +5,15 @@
         <meta name='viewport'
           content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
         <title>Colmar academy</title>
-        <link href="resources/css/styles.css" type="text/css" rel="stylesheet">
+        <link href="resources/css/styles-desktop.css" type="text/css" rel="stylesheet">
+        <link href="resources/css/styles-mobile.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body>
 
-        <!--header section-->
+        <!--header section--> <!-- add desktop icons and mobile icons and rules for both-->
         <div class="header">
+            <div class="desktop">
             <div class="logo">
             <img src="resources/images/ic-logo.svg">
             <h1>COLMAR<Span class="gray">ACADEMY</span></h1>
@@ -22,6 +25,15 @@
                     <li><a href="#">For companies</a></li>
                     <li><a href="#">Sign in</a></li>
                 </ul>
+            </div>
+            <div class="mobile">
+                <ul>
+                    <li><a href="#"><img src="resources/images/ic-logo.svg"></a></li>
+                    <li><a href="#"><img src="resources/images/ic-on-campus.svg"></a></li>
+                    <li><a href="#"><img src="resources/images/ic-online.svg"></a></li>
+                    <li><a href="#"><img src="resources/images/ic-login.svg"></a></li>
+                </ul>
+            </div>
             </nav>
         </div>
 
@@ -32,7 +44,7 @@
                 <div class="start">
             <h1>Learn something<br> new everyday</h1><br>
             <p>Loren ipsum dolor sit amet,<br> consectetur adipiscing elit.</p><br><br>
-            <div class="button">Start here</div>
+            <div class="button"><a href="#">Start here</a></div>
         </div>
             </div>
         </div>
@@ -98,6 +110,7 @@
         <!--learning section-->
         <div class="learning">
             <h2>Start learning</h2>
+            <div class="learning-desktop">
             <div class="course-container">
                 <div class="course">
                     <img src="resources/images/course-software.jpg">
@@ -150,7 +163,16 @@
                 </div>
             </div>
         </div>
+
+        <div class="learning-mobile">
+            <div class="course"><a href="#">Software Engineering</a></div>
+            <div class="course">Computer art</div>
+            <div class="course">Design</div>
+            <div class="course">Data</div>
+            <div class="course">Business</div>
+            <div class="course">Marketing</div>
         </div>
+    </div>
 
         <!--thesis section-->
         <div class="thesis">

@@ -2,19 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
   }
 
   html{
       width: 100%;
   }
 /*header styles*/
-.header{
+.header .desktop{
     /*border: 1px solid red;*/
     width: 100%;
     height: 64px;
     padding: 0px 24px;
-    display: inline-flex;
+    display: flex; 
     align-items: center;
 }
 
@@ -95,11 +95,14 @@ padding: 0px 8px;
     height: 55px;
     width: 100%;
     background-color: rgb(58, 58, 58);
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px 0px;
+}
+.button a{
+    text-decoration: none;
+    color: white;
 }
 
 /*end of banner-1 styles*/
@@ -206,7 +209,7 @@ font-size: 34px;
     margin: 32px 72px;
 }
 
-.learning .course{
+.learning-desktop .course{
     /*border: 1px solid green;*/
     height: auto;
     width: auto;
@@ -316,83 +319,13 @@ font-size: 34px;
     margin-left: 8px;
 }
 
-@media only screen and (max-width: 400px) {
 
-    .header h1, .header nav{
+@media only screen and (min-width: 401px) {
+    .header .mobile{
         display: none;
     }
 
-    .banner{
-        display: block;
+    .learning-mobile{
+        display: none;
     }
-
-    .banner .start{
-        margin: 0;
-        padding: 32px 16px;
-        height: auto;
-        font-size: 20px;
     }
-
-    .banner img{
-        width: 100%;
-        height: auto;
-        padding: 0;
-    }
-
-    .banner .button{
-        width: 100%;
-    }
-.banner-2{
-    display: none;
-}
-
-.banner-3{
-    width: 100%;
-}
-
-.banner-3 picture{
-    width: 100%;
-}
-.banner-3 img{
-    width: 100%;
-    height: auto;
-    padding-right: 0;
-}
-.banner-3 .content{
-    display: flex;
-    flex-direction: column;
-}
-
-.banner-3 .dates{
-    width: 100%;
-    height: auto;
-    padding: 16px;
-}
-.banner-3 .end{
-    background-color: white;
-}
-
-.learning .course-container{
-    display: none;
-}
-.thesis-1{
-    width: 100%;
-    height: auto;
-    padding-bottom: 24px;
-}
-
-.thesis-1 h3, .thesis p{
-    display: none;
-}
-.thesis-2{
-    display: none;
-}
-
-.footer .copyright{
-    height: auto;
-    padding: 16px 0;
-}
-.footer .terms{
-    display: none;
-}
-  }
