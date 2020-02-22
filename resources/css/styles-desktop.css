@@ -15,6 +15,9 @@
     padding: 0px 24px;
     display: flex; 
     align-items: center;
+    justify-content: space-between;
+    /*^^ puts space between the two divs (logo and nav)*/
+    /*instead of writing a separate css rule for nav*/ 
 }
 
 .header img{
@@ -31,27 +34,68 @@
     color: darkgray;
 }
 
-.header nav{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
 .header ul{
-    display: inline-flex;
+    display: flex;
     align-items: center;
     list-style: none;
     font-size: 18px;
 }
 
 .header li{
-padding: 0px 8px;
+padding: 0px 10px;
+border-right: 1px solid lightgray;
+}
+
+.header li:last-of-type{
+    border-right: none;
 }
 
 .header a{
     text-decoration: none;
     color: black;
 }
+
+ a:hover{
+    color: green;
+}
+
+/*dropdown menu*/
+.dropdown-desktop {
+    position: relative;
+  }
+
+  .dropdown-desktop .courses-menu{                    
+    display: none;
+  }
+
+  .dropdown-desktop > span {
+    z-index: 2;
+    position: relative; 
+    cursor: pointer;
+  }
+
+ .dropdown-desktop:hover .courses-menu{
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    border-radius: 5px;
+    padding-top: 40px;
+    position: absolute;      
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+  }
+
+  .courses-menu li {
+    list-style: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    text-align: center;  
+}
+  
+  .courses-menu li:last-of-type {
+    border-bottom: none;
+  }
 
 /*banner-1 desktop styles*/
 .banner{
@@ -88,12 +132,17 @@ padding: 0px 8px;
     color: white;
 }
 
+
+/*flex banner-2 and banner-3*//*use this rather than float*/
+.flex{
+    display: flex;
+}
+
 /* banner 2 styles*/
 .banner-2{
     border-right: 1px solid lightgray;
     height: auto;
     width: 60%;
-   float: left;
    padding: 32px 24px;
 }
 
@@ -116,8 +165,6 @@ padding: 0px 8px;
 .banner-3{
     height: auto;
     width: 40%;
-   float: right;
-   display: block;
 }
 
 .banner-3 .content{
@@ -222,7 +269,6 @@ font-size: 34px;
      height: auto;
     padding: 0px 24px 32px 24px;
     text-align: left;
-    float: left;
  }
 
  .thesis-1 video{
@@ -239,7 +285,6 @@ font-size: 34px;
  .thesis-2{
     width: 40%;
     height: auto;
-   float: right;
    padding-right: 24px;
    text-align: left;
  }
@@ -247,12 +292,8 @@ font-size: 34px;
 .thesis-container{
     width: 100%;
     height: 33.3%;
-    display: block;
 }
 
-.thesis-content{
-    display: flex;
-}
 .thesis img{
     padding: 16px;
     width: 35%;
